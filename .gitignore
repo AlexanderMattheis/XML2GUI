@@ -30,3 +30,6 @@ gradle-app.setting
 /ios/build/
 /ios-moe/build/
 
+## SonarLint
+.idea/sonarlint
+
