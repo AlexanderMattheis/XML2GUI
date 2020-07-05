@@ -3,11 +3,23 @@ package com.gdx.game.views.screens
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.ScreenAdapter
 import com.badlogic.gdx.graphics.GL20
+import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import de.alex.game.Main.Companion.manager
+import de.alex.game.system.Paths
 
-class RenderScreen : ScreenAdapter() {
+class LoadingScreen : ScreenAdapter() {
     companion object {
         private val MANAGER = manager
+    }
+
+    init {
+        loadIntoQueue(Paths.Files.ATLASES)
+    }
+
+    private fun loadIntoQueue(fileNames: Array<String>) {
+        for (fileName in fileNames) {
+            MANAGER.load(Paths.SPRITES + fileName, TextureAtlas::class.java)
+        }
     }
 
     override fun render(deltaTime: Float) {
@@ -17,7 +29,7 @@ class RenderScreen : ScreenAdapter() {
         draw(deltaTime)
     }
 
-    fun update(deltaTime: Float) {
+    fun update(deltaTime: Float) { // NOP
     }
 
     fun draw(deltaTime: Float) { // NOP

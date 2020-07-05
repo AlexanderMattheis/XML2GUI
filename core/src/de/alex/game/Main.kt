@@ -3,7 +3,7 @@ package de.alex.game
 import com.badlogic.gdx.Game
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.assets.AssetManager
-import com.gdx.game.views.screens.RenderScreen
+import com.gdx.game.views.screens.LoadingScreen
 
 class Main : Game() {
     companion object {
@@ -43,6 +43,6 @@ class Main : Game() {
 
     override fun create() {
         initResolution()
-        setScreen(RenderScreen())
+        setScreen(LoadingScreen())
     }
 }
