@@ -1,1 +1,2 @@
-xml2gui
+# XML2GUI
+An XML-renderer for LIBGDX graphical user interfaces.
