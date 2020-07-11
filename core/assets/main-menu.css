@@ -1,0 +1,18 @@
+/** ATTRIBUTE **/
+[type="button"] {
+    align: center; 
+}
+
+[type="game-logo"] {
+	align: center; 
+	height: 19.3;
+	menu-floating: center;
+	width: 33;
+}
+
+/** CLASS **/
+.ai-main-menu__credits-button {
+	align: left+center; 
+	menu-floating: left;
+}
+

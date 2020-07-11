@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Stage>
+	<TextButton type="button" x="-26.9" y="83.9" func="edit(getEmptyMap())">
+		New
+	</TextButton>
+	
+	<TextButton type="button" x="13.4" y="83.9" func="edit(getSelectedMap())">
+		Edit
+	</TextButton>
+	
+	<TextButton type="button" x="53.6" y="83.9" func="play(getSelectedMap(), true)">
+		Test
+	</TextButton>
+	
+	<TextButton type="button" x="53.6" y="83.9" func="delete(getSelectedMap())">
+		Delete
+	</TextButton>
+</Stage>

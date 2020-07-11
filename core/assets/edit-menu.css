@@ -1,0 +1,22 @@
+/** ATTRIBUTE **/
+[type="button"] {
+    align: center; 
+}
+
+/** ID **/
+#ai-edit-menu__explorer {
+	height: 72.4;
+	menu-floating: center;
+	width: 157.3;
+}
+
+/** CLASS **/
+.ai-edit-menu__scroll-button {
+	height: 6.25;
+	width: 4;
+}
+
+.ai-edit-menu__scroll-pane {
+	height: 72.4;
+	width: 157.3;
+}
